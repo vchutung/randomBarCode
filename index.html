@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Code-Barres Dynamique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Générateur de Code-Barres Dynamique</h1>
+
+        <!-- Liste déroulante pour choisir le type de code-barres -->
+        <label for="barcodeType">Choisir le type de code-barres:</label>
+        <select id="barcodeType">
+            <option value="CODE128">CODE128</option>
+            <option value="EAN13">EAN13</option>
+            <option value="UPC">UPC</option>
+            <option value="EAN8">EAN8</option>
+            <option value="CODE39">CODE39</option>
+            <option value="ITF">ITF</option>
+        </select>
+
+        <div id="barcode-container">
+            <svg id="barcode"></svg>  <!-- Le code-barres sera affiché ici -->
+        </div>
+    </div>
+
+    <!-- Inclure JsBarcode -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <!-- Inclure script.js -->
+    <script src="script.js"></script>
+
+</body>
+</html>
